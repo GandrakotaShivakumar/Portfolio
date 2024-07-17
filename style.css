@@ -1,0 +1,398 @@
+/* Resetting default margins and padding, setting font family, and ensuring box-sizing includes padding and border in element's total width and height */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+/* Enabling smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Setting background color to black and text color to white for the entire body */
+body {
+  background: black;
+  color: white;
+}
+
+/* Padding for the header section */
+.header-body {
+  padding: 10px 10%; /* The navbar will move top to bottom by 10px and move left to right side by 10% */
+}
+
+/* Flexbox layout for logo container to align items horizontally */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Adding margin to the right side of the logo image */
+.logo-container .image-2 {
+  margin-right: 10px;
+}
+
+/* Styling the logo text */
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Flexbox layout for the navigation bar */
+nav {
+  display: flex; /* The image of navbar and text will come side by side */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Inline-block display for navigation items and adding margin */
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+/* Styling navigation links */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+/* Adding a red underline effect to navigation links on hover */
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Flexbox layout for the home container to center items */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Adding margin to the left side of the home image */
+.home-img {
+  margin-left: 20px;
+}
+
+/* Styling for the name section */
+#My-name {
+  font-size: 30px;
+}
+
+#My-name h2 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+#My-name h2 span {
+  color: red;
+}
+
+/* About Section */
+/* Underlining subtitle with red color */
+.sub-title {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+/* Styling for the about column */
+.about-col-1 {
+  font-size: "";
+  margin-left: 10%;
+  display: inline-block;
+}
+
+/* Paragraph styling */
+.para {
+  margin-left: 0%;
+  margin-right: 10%;
+}
+
+/* Adding horizontal rule styling */
+.hr {
+  margin-right: 11%;
+  margin-left: 0%;
+}
+
+/* Flexbox layout for links */
+.links {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+/* Styling for tab links */
+.tab-links {
+  margin-right: 300px;
+  font-size: 18px;
+  font-weight: 1000;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+}
+
+/* Adding a red underline effect to tab links */
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+/* Active tab link styling */
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+/* Styling for tab contents list items */
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: #b55769;
+  font-size: 14px;
+}
+
+/* Default tab contents display is hidden */
+.tab-contents {
+  margin-left: 10%;
+  display: none;
+}
+
+/* Active tab contents display is visible */
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* Projects Section */
+/* Adding padding to the projects section */
+#projects {
+  padding: 30px 0;
+}
+
+/* Grid layout for projects list */
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+/* Styling for individual project cards */
+.projects-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+/* Icon styling within project cards */
+.projects-list div i {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* Project card heading styling */
+.projects-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Project card link styling */
+.projects-list div a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* Project card hover effect */
+.projects-list div:hover {
+  background-color: #ff004f;
+  transform: translateY(-10px);
+}
+
+/* Contact Section */
+/* Centering the contact section */
+#connect {
+  margin-left: 45%;
+}
+
+/* Styling for social media icons */
+.social-media-icons {
+  flex-basis: 35%;
+  margin-top: 20px;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+/* Social media icon hover effect */
+.social-media-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+/* Styling for the download resume button */
+.btn {
+  display: inline-block;
+  background: #ff004f;
+  color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-weight: 250%;
+  text-decoration: none;
+  height: 40px;
+  padding-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: white;
+  color: red;
+}
+
+/* Button active effect */
+.btn:active {
+  background-color: black;
+  color: white;
+}
+
+/* CSS for smaller screens */
+@media (max-width: 600px) {
+  /* Adjusting padding for smaller screens */
+  .header-body {
+    padding: 10px 5%;
+  }
+
+  /* Flex direction column for home container */
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Removing left margin for home image on smaller screens */
+  .home-img {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  /* Adjusting font size for name section */
+  #My-name {
+    font-size: 24px;
+  }
+
+  #My-name h2 {
+    font-size: 36px;
+  }
+
+  /* Centering navigation items and adjusting padding */
+  nav ul {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Display block for navigation items on smaller screens */
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Adjusting font size for navigation links */
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* Adjusting margin for about column */
+  .about-col-1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Adjusting margins for paragraph */
+  .para {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* Reducing margin for tab links */
+  .tab-links {
+    margin-right: 20px;
+  }
+
+  /* Centering tab contents */
+  .tab-contents {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Adjusting grid layout for projects list on smaller screens */
+  .projects-list {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  /* Reducing padding for project cards */
+  .projects-list div {
+    padding: 20px;
+  }
+
+  /* Centering contact section */
+  #connect {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Centering social media icons */
+  .social-media-icons {
+    flex-basis: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Adjusting font size for social media icons */
+  .social-media-icons a {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  /* Adjusting button width and margin for smaller screens */
+  .btn {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
